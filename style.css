@@ -1,0 +1,18 @@
+body {
+    background: lemonchiffon;
+}
+
+
+p {
+    color: hotpink;
+}
+.heading {
+    color: darkblue;
+}
+
+.sectionHeader {
+    color: rgb(38, 85, 172);
+}
+.aboutMe {
+    font-size: 50;
+}
