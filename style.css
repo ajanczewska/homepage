@@ -1,48 +1,54 @@
 body {
-    
-    background: rgb(248, 244, 204);
-}
-main {
-    padding: 1% 25% 1% 25%;
+  margin: 0;
+  background: rgb(248, 244, 204);
 }
 
 .heading {
-    color: darkblue;
+  position: relative;
+  color: darkblue;
 }
 
 .sectionHeader {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    color: rgb(38, 85, 172);
+  padding: 5vh 5vw;
+  position: relative;
+  color: rgb(38, 85, 172);
 }
 #aboutMe {
-    position: relative;
-    font-style: solid;
-    font-size: large;
-    color: darkblue;
-    font-weight: 500;
-    padding: 5% 0 1% 0;
+  padding: 2vh 5vw;
+  position: relative;
+  font-style: solid;
+  font-size: large;
+  color: darkblue;
+  font-weight: 500;
 }
 .photo {
-    display: block;
-    max-width: 60vw;
-    max-height: 30vh;
-    border-radius: 5%;
-    margin-right: auto;
-    margin-left: auto;
+  position: relative;
+  max-width: 40%;
+  max-height: 20%;
+  border-radius: 5%;
+  padding: 2vh 4vw;
 }
-.menu {
-    position: fixed;
-    box-sizing: border-box;
-    background-color: rgb(220, 239, 240);
-    padding: 1% 25% 1% 25%;
-    
-   
+.navigation {
+  padding: 2vh 4vw;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  background-color: cornsilk;
+}
+.navigation_link {
+    color: darkblue;
+    text-decoration: none;
+    margin: 2vh 1vw;
+}
+.navigation_link--homepage {
+    color: darkred;
 }
 .top {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+}
+footer {
+  padding: 80vh 4vw;
 }
