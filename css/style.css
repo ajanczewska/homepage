@@ -43,16 +43,6 @@ body {
 .navigation {
   display: none;
 }
-.footer_top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  text-decoration: none;
-}
-footer {
-  padding: 80vh 4vw;
-  color: aliceblue;
-}
 
 .hamburger {
   position: fixed;
@@ -113,6 +103,21 @@ footer {
 }
 .navigation_link--homepage {
   color: rgb(252, 176, 208);
+}
+.footer_top {
+  position: fixed;
+  bottom: 16px;
+  right: 10px;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: monospace;
+  font-weight: 500;
+}
+footer {
+  padding: 80vh 16px;
+  color: aliceblue;
+  font-family: monospace;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
