@@ -1,0 +1,121 @@
+@import "modules/hambureger.scss";
+$tablet: 768px;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: rgb(59, 29, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 29, 98, 1) 0%,
+    rgba(18, 25, 79, 0.804359243697479) 0%,
+    rgba(62, 21, 62, 0.9136029411764706) 100%
+  );
+}
+.header {
+  grid-area: header;
+  min-height: 60px;
+}
+.main {
+  margin: 60px 20px;
+  }
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Tahoma", "Geneva", sans-serif;
+    font-size: 23px;
+    color: aliceblue;
+    font-weight: 500;
+    &__header {
+        margin: 0;
+        &::before{
+          content: '';
+          width: 12px;
+          height: 12px;
+          background-color: beige;;;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    &__photo {
+        display: block;
+        max-width: 100%;
+        max-height: 20%;
+        border-radius: 5%;
+        padding: 2vh 0;
+      }
+    }
+
+.navigation {
+  display: none;
+  &__link {
+    margin: 16px;
+    color: rgb(253, 239, 246);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+    display: block;
+    &--homepage {
+      color: rgb(252, 176, 208);
+    }
+  }
+  &__link:hover {
+    color: rgb(250, 113, 50);
+  }
+  &--open {
+    width: 50vw;
+    display: block;
+    margin: 16px;
+  }
+}
+.footer {
+  padding: 80vh 16px;
+  color: aliceblue;
+  font-family: monospace;
+  font-weight: 500;
+  &__top {
+    position: fixed;
+    bottom: 16px;
+    right: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: monospace;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .section__photo {
+    display: block;
+    max-width: 40%;
+    max-height: 20%;
+    border-radius: 5%;
+    padding: 2vh 0;
+  }
+  .navigation {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(17, 11, 27, 0.5);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    &__link {
+      margin: 2vh 1vw;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+}
